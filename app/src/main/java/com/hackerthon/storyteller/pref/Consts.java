@@ -15,8 +15,8 @@ public class Consts {
     }
 
     public static class server{
-        public static String SERVER_IP = "172.19.94.198";
-        public static int SERVER_PORT = 5558;
+        public static String SERVER_IP = "192.168.43.106";
+        public static int SERVER_PORT = 8889;
     }
 
     public static class pref{
@@ -38,15 +38,10 @@ public class Consts {
     }
 
     public static class Msg{
-        public static String HelloContent = "HelloContent";
-        public static String RequestRecommendContent = "RequestRecommendContent";
-        public static String ResponseRecommendContent = "ResponseRecommendContent";
-        public static String RequestDataSyncContent = "RequestDataSyncContent";
-        public static String ResponseDataSyncContent = "ResponseDataSyncContent";
-        public static String RequestExerciseInfoContent = "RequestExerciseInfoContent";
-        public static String ResponseExerciseInfoContent = "ResponseExerciseInfoContent";
-        public static String RequestBarcodeContent = "RequestBarcodeContent";
-        public static String ResponseBarcodeContent = "ResponseBarcodeContent";
+        public static String RequestFeedContent = "RequestFeedContent";
+        public static String ResponseFeedContent = "ResponseFeedContent";
+        public static String RequestPostContent = "RequestPostContent";
+        public static String ResponsePostContent = "ResponsePostContent";
 
     }
 
