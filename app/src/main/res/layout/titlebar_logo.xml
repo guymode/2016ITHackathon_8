@@ -16,7 +16,7 @@
         android:layout_height="40dp"
         android:layout_weight="0"
         android:id="@+id/tb_btn_setting"
-        android:background="@drawable/testImg">
+        android:background="@drawable/test_img">
     </ImageButton>
 
 </LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg_main"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_main_imglogo"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_main_textlogo"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+    <com.nhn.android.naverlogin.ui.view.OAuthLoginButton
+        android:id="@+id/btn_splash_naver"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_naver_loing_kor"/>
+
+
+
+</LinearLayout>
