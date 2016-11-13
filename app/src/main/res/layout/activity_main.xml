@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#FFFFFF"
+    android:background="#F0F0F0"
     android:orientation="vertical">
-
+    <!--android:background="@drawable/bg_main1"-->
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,15 +27,23 @@
                 <TabWidget
                     android:id="@android:id/tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></TabWidget>
+                    android:background="#0F0F0F"
+                    android:layout_height="40dp"></TabWidget>
 
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
                     android:background="@drawable/bg_write_post"
-                    android:hint="What's on your mind?"
-                    android:
-                    android:id="@+id/lv_main_post"/>
+                    android:text="  What's on your mind?"
+                    android:textColor="#4b4ff9"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    android:textSize="15dp"
+                    android:id="@+id/btn_main_post"/>
+                <!--<Space-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="10dp" />-->
 
                 <FrameLayout
                     android:id="@android:id/tabcontent"
@@ -46,36 +54,48 @@
                         android:id="@+id/lv_recom_all"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:dividerHeight="8dp"
                         android:divider="#00FFFFFF" />
 
                     <ListView
                         android:id="@+id/lv_recom_board"
                         android:layout_width="fill_parent"
+                        android:layout_margin="10dp"
                         android:layout_height="fill_parent"
+                        android:dividerHeight="8dp"
                         android:divider="#00FFFFFF" />
 
                     <ListView
                         android:id="@+id/lv_recom_game"
                         android:layout_width="fill_parent"
+                        android:layout_margin="10dp"
                         android:layout_height="fill_parent"
+                        android:dividerHeight="8dp"
                         android:divider="#00FFFFFF" />
 
                     <ListView
                         android:id="@+id/lv_recom_trade"
                         android:layout_width="fill_parent"
+                        android:layout_margin="10dp"
                         android:layout_height="fill_parent"
+                        android:dividerHeight="8dp"
                         android:divider="#00FFFFFF" />
 
                     <ListView
                         android:id="@+id/lv_recom_hangout"
                         android:layout_width="fill_parent"
+                        android:layout_margin="10dp"
                         android:layout_height="fill_parent"
+                        android:dividerHeight="8dp"
                         android:divider="#00FFFFFF" />
 
                     <ListView
                         android:id="@+id/lv_recom_study"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:dividerHeight="8dp"
                         android:divider="#00FFFFFF" />
                 </FrameLayout>
             </LinearLayout>
@@ -83,90 +103,3 @@
 
     </LinearLayout>
 </LinearLayout>
-
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--xmlns:tools="http://schemas.android.com/tools"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
-    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
-    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
-    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
-    <!--android:background="#FFFFFF"-->
-    <!--tools:context=".ui.MainActivity">-->
-
-
-    <!--<EditText-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="40dp"-->
-        <!--android:background="@drawable/bg_write_post"-->
-        <!--android:hint="What's on your mind?" />-->
-
-
-    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:orientation="vertical"-->
-        <!--android:weightSum="1">-->
-
-        <!--<TabHost-->
-            <!--android:id="@android:id/tabhost"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent">-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:orientation="vertical">-->
-
-                <!--<TabWidget-->
-                    <!--android:id="@android:id/tabs"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent"></TabWidget>-->
-
-                <!--<FrameLayout-->
-                    <!--android:id="@android:id/tabcontent"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="match_parent">-->
-
-                    <!--<ListView-->
-                        <!--android:id="@+id/lv_recom_all"-->
-                        <!--android:layout_width="fill_parent"-->
-                        <!--android:layout_height="fill_parent"-->
-                        <!--android:divider="#00FFFFFF" />-->
-
-                    <!--<ListView-->
-                        <!--android:id="@+id/lv_recom_board"-->
-                        <!--android:layout_width="fill_parent"-->
-                        <!--android:layout_height="fill_parent"-->
-                        <!--android:divider="#00FFFFFF" />-->
-
-                    <!--<ListView-->
-                        <!--android:id="@+id/lv_recom_game"-->
-                        <!--android:layout_width="fill_parent"-->
-                        <!--android:layout_height="fill_parent"-->
-                        <!--android:divider="#00FFFFFF" />-->
-
-                    <!--<ListView-->
-                        <!--android:id="@+id/lv_recom_trade"-->
-                        <!--android:layout_width="fill_parent"-->
-                        <!--android:layout_height="fill_parent"-->
-                        <!--android:divider="#00FFFFFF" />-->
-
-                    <!--<ListView-->
-                        <!--android:id="@+id/lv_recom_hangout"-->
-                        <!--android:layout_width="fill_parent"-->
-                        <!--android:layout_height="fill_parent"-->
-                        <!--android:divider="#00FFFFFF" />-->
-
-                    <!--<ListView-->
-                        <!--android:id="@+id/lv_recom_study"-->
-                        <!--android:layout_width="fill_parent"-->
-                        <!--android:layout_height="fill_parent"-->
-                        <!--android:divider="#00FFFFFF" />-->
-                <!--</FrameLayout>-->
-            <!--</LinearLayout>-->
-        <!--</TabHost>-->
-    <!--</LinearLayout>-->
-<!--</LinearLayout>-->

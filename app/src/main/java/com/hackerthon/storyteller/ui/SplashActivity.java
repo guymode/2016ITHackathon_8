@@ -1,10 +1,12 @@
 package com.hackerthon.storyteller.ui;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
@@ -68,10 +70,13 @@ public class SplashActivity extends Activity {
         initSetting();
     }
 
+//    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void initSetting() {
 
 
         final OAuthLoginButton btn_naver = (OAuthLoginButton) findViewById(R.id.btn_splash_naver);
+
+//        btn_naver.setBackground(getDrawable(R.drawable.btn_naver_loing_kor));
 
 
         btn_naver.setOnClickListener(new View.OnClickListener() {
@@ -150,6 +155,10 @@ public class SplashActivity extends Activity {
             editor.putString(Consts.naver.EMAIL, email);
             editor.putString(Consts.naver.NICKNAME, nickname);
 
+            Consts.pref.getName = name;
+            Consts.pref.getNick = nickname;
+            Consts.pref.getEmail = email;
+
             if (email == null) {
                 Toast.makeText(SplashActivity.this,
                         "로그인 실패하였습니다.  잠시후 다시 시도해 주세요!!",                 Toast.LENGTH_SHORT)
@@ -157,6 +166,7 @@ public class SplashActivity extends Activity {
             } else {
                 Intent intent = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(intent);
+                finish();
             }
 
         }
